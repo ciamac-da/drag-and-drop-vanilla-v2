@@ -1,0 +1,34 @@
+{
+  "name": "drag-and-drop-vanilla-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p watch watch:styles",
+    "build": "run-s clean clean:styles build:styles copy",
+    "deploy": "run-s build publish",
+    "build:styles": "sass src/scss:src/styles",
+    "watch": "live-server src",
+    "watch:styles": "sass src/scss:src/styles --watch",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciamac-da/drag-and-drop-vanilla-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciamac-da/drag-and-drop-vanilla-v2/issues"
+  },
+  "dependencies": {
+    "gh-pages": "latest",
+    "live-server": "latest",
+    "npm-run-all": "latest",
+    "sass": "latest"
+  },
+  "homepage": "https://github.com/ciamac-da/drag-and-drop-vanilla-v2#readme"
+}
