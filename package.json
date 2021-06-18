@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ciamac-da.github.io/drag-and-drap-vanilla-v2",
   "name": "drag-and-drop-vanilla-v2",
   "version": "1.0.0",
   "description": "",
@@ -29,6 +30,5 @@
     "live-server": "latest",
     "npm-run-all": "latest",
     "sass": "latest"
-  },
-  "homepage": "https://github.com/ciamac-da/drag-and-drop-vanilla-v2#readme"
+  }
 }
